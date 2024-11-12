@@ -1,0 +1,6 @@
+com\example\receiptservice\ReceiptServiceApplication.class
+com\example\receiptservice\controller\ReceiptController.class
+com\example\receiptservice\model\Receipt.class
+com\example\receiptservice\model\Item.class
+com\example\receiptservice\HomeController.class
+com\example\receiptservice\service\ReceiptService.class
