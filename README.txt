@@ -5,7 +5,6 @@ Running the Application
 1. Docker:
    - Ensure Docker is installed and running.
    - Build and run the application using the following commands:
-     mvn clean install
      docker build -t receiptservice .
      docker run -p 8080:8080 receiptservice
      
