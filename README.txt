@@ -78,3 +78,44 @@ This modular setup ensures that each component is independent, maintainable, and
 
 Docker Information:
 The Dockerfile uses the OpenJDK 17 slim image to run the application in a lightweight environment. The jar file is copied from the target folder, and port 8080 is exposed, allowing access to the Spring Boot application.
+
+
+Example of a receipt in JSON format:
+{
+  "retailer": "Target",
+  "purchaseDate": "2022-01-01",
+  "purchaseTime": "13:01",
+  "items": [
+    {
+      "shortDescription": "Mountain Dew 12PK",
+      "price": "6.49"
+    },{
+      "shortDescription": "Emils Cheese Pizza",
+      "price": "12.25"
+    },{
+      "shortDescription": "Knorr Creamy Chicken",
+      "price": "1.26"
+    },{
+      "shortDescription": "Doritos Nacho Cheese",
+      "price": "3.35"
+    },{
+      "shortDescription": "   Klarbrunn 12-PK 12 FL OZ  ",
+      "price": "12.00"
+    }
+  ],
+  "total": "35.35"
+}
+
+Example of id received after the POST method on Postman:
+{
+    "id": "85f708d7-4567-4949-b6e7-b2bb4bfe14cd"
+}
+
+Example of url after getting the id from the POST request on Postman:
+
+http://localhost:8080/receipts/85f708d7-4567-4949-b6e7-b2bb4bfe14cd/points
+
+Example of points displayed of the specific receipt id:
+{
+    "points": 28
+}
